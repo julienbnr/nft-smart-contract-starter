@@ -17,7 +17,7 @@ contract NFT is ERC721Enumerable, Ownable {
     // Minting one token will cost 1.5 eth
     uint256 public constant price = 1.5 ether;
 
-    // Maximum of mint will be 10000
+    // Maximum of mint will be 1000
     uint256 constant MAX_SUPPLY = 1000;
 
     // Will enable minting
