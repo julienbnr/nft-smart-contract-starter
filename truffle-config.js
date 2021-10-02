@@ -61,6 +61,24 @@ module.exports = {
       skipDryRun: true
     },
 
+    avax: {
+      provider: () => new HDWalletProvider(
+          [ process.env.PRIVATE_KEY ],
+          'https://api.avax.network/ext/bc/C/rpc'
+      ),
+      network_id: '*',
+      skipDryRun: true
+    },
+
+    avaxFuji: {
+      provider: () => new HDWalletProvider(
+          [ process.env.PRIVATE_KEY ],
+          'https://api.avax-test.network/ext/bc/C/rpc'
+      ),
+      network_id: '*',
+      skipDryRun: true
+    },
+
 
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
