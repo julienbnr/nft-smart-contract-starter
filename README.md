@@ -16,3 +16,8 @@ API_KEY=YOUR_EXPLORER_API_KEY
 - `truffle test` for testing smart contracts
 - `npm run-script compile` for avoiding cache while compiling with truffle
 - `npm run-script verify` for verifying your smart contract once they're deployed. Replace `CONTRACT_ADDRESS` and `NETWORK` by corresponding values
+
+## More infos
+This repo contains 2 contracts
+- A basic ERC721 contract
+- An ERC721 contract with mint reward features (each mint, x % are reflected to previous minters)
